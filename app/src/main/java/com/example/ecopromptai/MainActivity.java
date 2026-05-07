@@ -17,6 +17,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
 
+import com.example.ecopromptai.BuildConfig;
 import com.google.ai.client.generativeai.GenerativeModel;
 import com.google.ai.client.generativeai.java.GenerativeModelFutures;
 import com.google.ai.client.generativeai.type.Content;
@@ -53,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         btnShowFullResponse = findViewById(R.id.btnShowFullResponse);
         charCount = findViewById(R.id.charCount);
 
-        GenerativeModel gm = new GenerativeModel("gemini-3-flash-preview", "AIzaSyBYAPuQ9kRxkoj5sqAAl2zLZXzzf_hjxRE");
+        GenerativeModel gm = new GenerativeModel("gemini-3-flash-preview", BuildConfig.GEMINI_API_KEY);
         GenerativeModelFutures model = GenerativeModelFutures.from(gm);
 
         inputPrompt.addTextChangedListener(new TextWatcher() {
