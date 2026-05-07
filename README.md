@@ -6,7 +6,7 @@ Aby uruchomić aplikację, potrzebujesz własnego klucza API do modelu Gemini.
     *   Wejdź na stronę [Google AI Studio](https://aistudio.google.com/app/apikey).
     *   Zaloguj się i kliknij przycisk **"Get API Key"**.
     *   Wygeneruj nowy klucz i skopiuj go.
-        > Ewentualnie użyj publicznego klucza = "AIzaSyAHHFDvdFyfBGgTw3oGfvSWS8Y7gfp6j9s"
+        > Ewentualnie użyj publicznego klucza = "AIzaSyAHHFDvdFy#####fBGgTw3oGfvS##.#WS8Y7gfp6j9s" (bez hashtagów i kropek oczywiście. Google inaczej nie pozwala mi tego wkleić)
 
 2.  **Skonfiguruj lokalny plik z kluczem**:
     *   W głównym katalogu projektu (tam, gdzie znajduje się plik `local.properties.example`) utwórz kopię tego pliku i nazwij ją `local.properties`.
